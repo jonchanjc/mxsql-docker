@@ -41,8 +41,8 @@ GO
 RESTORE DATABASE <DBName>
 FROM DISK='/var/opt/mssql/backups/<DB backup file>'
 WITH 
-MOVE '<DataFile Logical Name>' TO '/var/opt/mssql/data'
-,MOVE '<LogFile Logical Name>' TO '/var/opt/mssql/data'
+MOVE '<DataFile Logical Name>' TO '/var/opt/mssql/data/<Datafile Physical Name>'
+,MOVE '<LogFile Logical Name>' TO '/var/opt/mssql/data/<Logfile Physical Name>'
 ,STATS=5
 , REPLACE -- use if overwriting existing DB
 ```
