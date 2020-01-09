@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+    mssql01:
+        image: "mcr.microsoft.com/mssql/server:2017-latest"
+        #image: "mcr.microsoft.com/mssql/server:2017-CU17-ubuntu"
+        #image: "mcr.microsoft.com/mssql/server:2019-latest"
+        container_name: "mxsql"
+        hostname: "mxsql"
+        ports:
+            - "1403:1433"
+        volumes:
+            - "sqldata:/var/opt/mssql"
+            - "sqlbackups:/var/opt/mssql/backups"  
+        env_file:
+            - ./mssql_config.env
+    
+volumes:
+    sqldata:
+    sqlbackups:
