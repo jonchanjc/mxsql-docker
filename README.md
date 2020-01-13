@@ -22,7 +22,7 @@ pass: big64&Mac
 1. Copy the DB backup file to the container
 
 ```docker
-docker cp <DB backup file> mxsql:/var/opt/mssql/backups
+docker cp <DB backup file> mxsql:/var/opt/mssql/backups/<DB backup file>
 ```
 
 2. Launch SSMS and open up a new query window
