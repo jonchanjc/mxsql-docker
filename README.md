@@ -1,4 +1,4 @@
-# mxsql-docker
+# Description
 
 To run latest MSSQL 2017 in Linux container using Docker Compose for fast local development and testing.
 
@@ -69,9 +69,9 @@ Data is presisted in 2 container volumes to preserve the changes in the sqldata 
 See [Here](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver15)
 for full list of SQL Environment Variables.
 
-# Upgrade/Downgrade between SQL Server version
+# Upgrade/Downgrade between SQL Server CU versions
 
-The power of container can let you upgrade or downgrade your SQL instance to test for new features and compatiblity but just changing one line of code in the config file.
+The power of container can let you upgrade or downgrade your SQL instance to test for new features and compatiblity by just changing one line of code in the config file.
 
 ## To switch between different version of CU 
 
