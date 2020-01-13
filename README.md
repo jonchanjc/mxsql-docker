@@ -1,6 +1,12 @@
 # Description
 
-To run latest MSSQL 2017 in Linux container using Docker Compose for fast local development and testing.
+To run latest MSSQL 2017 in Linux container using Docker Compose for fast local development and testing on Windows Machine.
+
+# Requirements
+
+1. Latest Docker Toolbox (Win 7) or Docker Desktop (Win 10)
+2. Enable Virtualization in BIOS
+3. At least 2GB of Ram in your Docker VM
 
 # To start the SQL instance
 
